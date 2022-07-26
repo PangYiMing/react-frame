@@ -8,7 +8,7 @@ const devMode = true;
 const entryObj = {};
 const HtmlWebpackPluginArr = [];
 function setSingle() {
-  entryObj['index'] = `./src/index.js`;
+  entryObj['index'] = `./src/index.tsx`;
   const obj = new HtmlWebpackPlugin({
     template: `./src/index.html`,
     filename: `index.html`,

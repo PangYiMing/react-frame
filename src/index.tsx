@@ -2,19 +2,18 @@
  * @Author: pym
  * @Date: 2022-01-04 11:51:03
  * @LastEditors: pym
- * @Description: 
- * @LastEditTime: 2022-02-04 13:22:26
+ * @Description:
+ * @LastEditTime: 2022-07-26 23:12:38
  */
+import ReactDOM, { render } from 'react-dom';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.less';
-
+import Home from './pages/home/index';
 function start() {
   // fetch('/tripdocs/test/api', { method: 'POST' });
+  render(<Home></Home>, document.getElementById('root'));
 }
 
 setTimeout(() => {
   start();
 }, 1000);
-
-ReactDOM.render(<div className="app">qqq</div>, document.getElementById('root'));
