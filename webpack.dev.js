@@ -96,7 +96,6 @@ module.exports = {
       },
       {
         test: /\.less$/i,
-        // npm install sass-loader node-sass webpack --save-dev
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -127,20 +126,20 @@ module.exports = {
       // The following webpack.config.js can load CSS files,
       // embed small PNG/JPG/GIF/SVG images as well as fonts as Data URLs
       // and copy larger files to the output directory.
-      {
-        test: /\.(sa|sc)ss$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              // hmr: process.env.NODE_ENV === 'development',
-            },
-          },
-          'css-loader',
-          'postcss-loader',
-          'sass-loader',
-        ],
-      },
+      // npm install sass-loader node-sass webpack --save-dev
+      // {
+      //   test: /\.(sa|sc)ss$/,
+      //   use: [
+      //     {
+      //       loader: MiniCssExtractPlugin.loader,
+      //       options: {
+      //         // hmr: process.env.NODE_ENV === 'development',
+      //       },
+      //     },
+      //     'css-loader',
+      //     'postcss-loader',
+      //   ],
+      // },
 
       {
         test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
